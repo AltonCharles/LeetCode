@@ -14,7 +14,7 @@ import java.util.List;
  * 请你找出所有和为 0 且不重复的三元组。
  * 注意：答案中不可以包含重复的三元组。
  */
-public class ThreeSum {
+public class ThreeSum15 {
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>>  threeNumberList=new ArrayList<List<Integer>>();
@@ -52,7 +52,7 @@ public class ThreeSum {
     }
 
     public static void main(String[] args) {
-        ThreeSum Sum = new ThreeSum();
+        ThreeSum15 Sum = new ThreeSum15();
         Sum.threeSum(new int[]{0,0,0});
         //int[] a=Sum.threeSum(new int[]{1, 3, 4, 2});
 //        for (int i = 0; i < a.length; i++) {
