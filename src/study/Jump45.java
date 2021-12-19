@@ -31,8 +31,8 @@ public class Jump45 {
 
     public static void main(String[] args) {
         Jump45 jump45 = new Jump45();
-       //int[] nums={2,3,1,1,4};
-        int[] nums={1,1,2};
+       int[] nums={2,2,1,1,4};
+        //int[] nums={1,1,2};
         System.out.println(jump45.jump(nums));
     }
 }
