@@ -6,9 +6,6 @@ package study;
  */
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Stack;
 
 /**
  * 给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。
@@ -42,6 +39,10 @@ public class Palindrome09 {
 //        return false;
 //    }
 
+    /**
+     *采用栈速度慢，内存开销小
+     * 采用动态数组，速度快，内存开销大
+     */
     public boolean isPalindrome(int x) {
         if(x<0)
             return false;
@@ -68,6 +69,23 @@ public class Palindrome09 {
         return true;
     }
 
+    /**
+     * 可以参考其while部分，一边分解一边求和
+     * 想法很不错，简洁明了
+     * @param args
+     */
+//    public boolean isPalindrome(int x) {
+//        if(x<0)
+//            return false;
+//        int rem=0,y=0;
+//        int quo=x;
+//        while(quo!=0){
+//            rem=quo%10;
+//            y=y*10+rem;
+//            quo=quo/10;
+//        }
+//        return y==x;
+//    }
 
     public static void main(String[] args) {
         Palindrome09 palindrome09 = new Palindrome09();
