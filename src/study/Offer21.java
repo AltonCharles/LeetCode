@@ -39,6 +39,27 @@ public class Offer21 {
         }
         return nums;
     }
+    //快排的方法，思路很清晰，注意必须保证在内层里
+    //left<right
+
+//    public int[] exchange(int[] nums) {
+//        int left = 0;
+//        int right = nums.length - 1;
+//        while (left < right) {
+//            while (left < right && nums[left] % 2 != 0) {
+//                left++;
+//            }
+//            while (left < right && nums[right] % 2 == 0) {
+//                right--;
+//            }
+//            if (left < right) {
+//                int temp = nums[left];
+//                nums[left] = nums[right];
+//                nums[right] = temp;
+//            }
+//        }
+//        return nums;
+//    }
 
     public static void main(String[] args) {
         Offer21 offer21 = new Offer21();
