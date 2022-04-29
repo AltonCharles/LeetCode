@@ -13,13 +13,13 @@ import java.util.Queue;
 * */
 public class Offer44 {
     public List<Integer> largestValues(TreeNode root) {
-        int LMax=0;
         Queue<TreeNode> queue=new LinkedList<>();
         ArrayList<Integer> list = new ArrayList<>();
         if(root==null)
             return list;
         queue.offer(root);
         while (!queue.isEmpty()){
+            int LMax=queue.peek().val;
             for(int i=queue.size();i>0;i--){
                 TreeNode temp=queue.peek();
                 LMax=Math.max(LMax,temp.val);
