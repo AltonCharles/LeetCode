@@ -1,9 +1,5 @@
 package OfferII;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
-
 /**
  * @author yanggq
  * @create 2022-05-02 20:49
@@ -15,7 +11,6 @@ import java.util.TreeMap;
 * 即按中序遍历的顺序节点 p 的下一个节点。
 * */
 public class Offer53 {
-
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
         TreeNode cur=root;
         TreeNode result=null;
@@ -23,12 +18,9 @@ public class Offer53 {
             if(cur.val>p.val){
                 result=cur;
                 cur=cur.left;
-            }else if(cur.val<p.val){
+            }else{
                 cur=cur.right;
-                result=cur.right;
-            }else {
-                //return cur.right;
-                return result;
+                //result=cur.right;
             }
         }
         return result;
